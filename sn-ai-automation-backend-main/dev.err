@@ -1,0 +1,73 @@
+node:events:487
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:2008:16)
+    at listenInCluster (node:net:2065:12)
+    at Server.listen (node:net:2170:7)
+    at app.listen (C:\Users\d892626\OneDrive - Telstra\Documents\Catalog Automation SNOW\sn-ai-automation-backend-main\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/d892626/OneDrive%20-%20Telstra/Documents/Catalog%20Automation%20SNOW/sn-ai-automation-backend-main/src/index.js:52:9)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:2044:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v25.9.0
+❌ OpenRouter interpretation failed: self-signed certificate in certificate chain
+⚠️  sn_fd API failed (undefined): self-signed certificate in certificate chain — using table API
+⚠️  Flow creation warning: self-signed certificate in certificate chain
+⚠️  Approval warning (manager): self-signed certificate in certificate chain
+⚠️  Business Rule creation warning: self-signed certificate in certificate chain
+⚠️  Client Script creation warning: self-signed certificate in certificate chain
+⚠️  ATF test creation warning: self-signed certificate in certificate chain
+❌ Update set generation failed: self-signed certificate in certificate chain
+[ERROR] CREATE_CATALOG_ITEM_FAILED: Update set generation failed: self-signed certificate in certificate chain
+Error details: Update set generation failed: self-signed certificate in certificate chain
+❌ OpenRouter interpretation failed: self-signed certificate in certificate chain
+⚠️  sn_fd API failed (undefined): self-signed certificate in certificate chain — using table API
+⚠️  Flow creation warning: self-signed certificate in certificate chain
+⚠️  Approval warning (manager): self-signed certificate in certificate chain
+⚠️  Business Rule creation warning: self-signed certificate in certificate chain
+⚠️  Client Script creation warning: self-signed certificate in certificate chain
+⚠️  ATF test creation warning: self-signed certificate in certificate chain
+❌ Update set generation failed: self-signed certificate in certificate chain
+[ERROR] CREATE_CATALOG_ITEM_FAILED: Update set generation failed: self-signed certificate in certificate chain
+Error details: Update set generation failed: self-signed certificate in certificate chain
+AI interpretation failed, falling back to rule-based: Connection error.
+❌ OpenRouter interpretation failed: self-signed certificate in certificate chain
+⚠️  sn_fd API failed (undefined): self-signed certificate in certificate chain — using table API
+⚠️  Flow creation warning: self-signed certificate in certificate chain
+⚠️  Approval warning (manager): self-signed certificate in certificate chain
+⚠️  Business Rule creation warning: self-signed certificate in certificate chain
+⚠️  Client Script creation warning: self-signed certificate in certificate chain
+⚠️  ATF test creation warning: self-signed certificate in certificate chain
+❌ Update set generation failed: self-signed certificate in certificate chain
+[ERROR] CREATE_CATALOG_ITEM_FAILED: Update set generation failed: self-signed certificate in certificate chain
+Error details: Update set generation failed: self-signed certificate in certificate chain
+node:events:487
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:2008:16)
+    at listenInCluster (node:net:2065:12)
+    at Server.listen (node:net:2170:7)
+    at app.listen (C:\Users\d892626\OneDrive - Telstra\Documents\Catalog Automation SNOW\sn-ai-automation-backend-main\node_modules\express\lib\application.js:635:24)
+    at startServer (file:///C:/Users/d892626/OneDrive%20-%20Telstra/Documents/Catalog%20Automation%20SNOW/sn-ai-automation-backend-main/src/index.js:52:9)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:2044:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3001
+}
+
+Node.js v25.9.0

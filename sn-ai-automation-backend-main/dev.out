@@ -1,0 +1,366 @@
+
+> sn-ai-automation@0.1.0 dev
+> nodemon src/index.js
+
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/index.js`[39m
+🔧 Deployment Service Init:
+  Instance: https://dev277103.service-now.com
+  User: admin
+ServiceNow Config:
+  Instance: https://dev277103.service-now.com
+  User: admin
+✅ Default admin user seeded (password: admin123)
+🧠 Using in-memory data store
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/index.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/index.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/index.js`[39m
+🔧 Deployment Service Init:
+  Instance: https://dev277103.service-now.com
+  User: admin
+ServiceNow Config:
+  Instance: https://dev277103.service-now.com
+  User: admin
+✅ Default admin user seeded (password: admin123)
+🧠 Using in-memory data store
+🚀 Backend running on http://localhost:3001
+🧠 Using OpenRouter (meta-llama/llama-3.3-70b-instruct) for interpretation...
+📋 Using fallback rule-based interpreter
+AST generated: {
+  "type": "catalog_item",
+  "name": "Laptop Request",
+  "description": "create a laptop req",
+  "category": "Hardware",
+  "variables": [
+    {
+      "name": "model",
+      "type": "choice",
+      "label": "Laptop Model",
+      "mandatory": true,
+      "choices": [
+        "Dell",
+        "HP",
+        "Lenovo",
+        "MacBook"
+      ],
+      "referenceTable": ""
+    },
+    {
+      "name": "ram",
+      "type": "choice",
+      "label": "RAM Size",
+      "mandatory": true,
+      "choices": [
+        "8GB",
+        "16GB",
+        "32GB"
+      ],
+      "referenceTable": ""
+    },
+    {
+      "name": "justification",
+      "type": "multiline",
+      "label": "Business Justification",
+      "mandatory": true,
+      "choices": [],
+      "referenceTable": ""
+    },
+    {
+      "name": "os_preference",
+      "type": "choice",
+      "label": "OS Preference",
+      "mandatory": false,
+      "choices": [
+        "Windows",
+        "Mac",
+        "Linux"
+      ],
+      "referenceTable": ""
+    },
+    {
+      "name": "urgency",
+      "type": "choice",
+      "label": "Urgency",
+      "mandatory": true,
+      "choices": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "referenceTable": ""
+    }
+  ],
+  "approvals": [
+    "manager"
+  ],
+  "approvalGroups": [],
+  "approvalConditions": [],
+  "workflow": [
+    "submit",
+    "manager_approval",
+    "fulfillment",
+    "complete"
+  ],
+  "sla_minutes": 480,
+  "scripts": {
+    "businessRule": true,
+    "clientScript": true
+  },
+  "flowTrigger": {
+    "table": "sc_request",
+    "event": "insert",
+    "condition": "active=true"
+  }
+}
+[AUDIT] CREATE_CATALOG_ITEM_START: { name: 'Laptop Request' }
+[AUDIT] CATALOG_ITEM_CREATED: { sys_id: 'cat_5lvzathhg' }
+Creating variable set with 5 variables
+[AUDIT] VARIABLE_SET_CREATED: { sys_id: 'varset_hrcgvzr8v', count: 5 }
+Creating Flow Designer flow: Laptop Request
+[AUDIT] FLOW_CREATED: { sys_id: 'flow_7tdhs2i70' }
+Creating approval rule for: Laptop Request
+[AUDIT] APPROVAL_RULE_CREATED: { sys_id: 'approval_siwnk7tay' }
+[AUDIT] BUSINESS_RULE_CREATED: { sys_id: 'br_hc5dn3jqu' }
+[AUDIT] CLIENT_SCRIPT_CREATED: { sys_id: 'cs_jmrdqjn9k' }
+Generating ATF test case for: Laptop Request
+[AUDIT] ATF_TEST_CASE_GENERATED: { sys_id: 'atf_1kajhc1m5' }
+Executing ATF test case: atf_1kajhc1m5
+[AUDIT] ATF_TEST_EXECUTED: { status: 'passed' }
+Generating update set for: Laptop Request
+[AUDIT] CREATE_CATALOG_ITEM_FAILED: { name: 'Laptop Request' }
+🧠 Using OpenRouter (meta-llama/llama-3.3-70b-instruct) for interpretation...
+📋 Using fallback rule-based interpreter
+AST generated: {
+  "type": "catalog_item",
+  "name": "Laptop Request",
+  "description": "create a laptop req",
+  "category": "Hardware",
+  "variables": [
+    {
+      "name": "model",
+      "type": "choice",
+      "label": "Laptop Model",
+      "mandatory": true,
+      "choices": [
+        "Dell",
+        "HP",
+        "Lenovo",
+        "MacBook"
+      ],
+      "referenceTable": ""
+    },
+    {
+      "name": "ram",
+      "type": "choice",
+      "label": "RAM Size",
+      "mandatory": true,
+      "choices": [
+        "8GB",
+        "16GB",
+        "32GB"
+      ],
+      "referenceTable": ""
+    },
+    {
+      "name": "justification",
+      "type": "multiline",
+      "label": "Business Justification",
+      "mandatory": true,
+      "choices": [],
+      "referenceTable": ""
+    },
+    {
+      "name": "os_preference",
+      "type": "choice",
+      "label": "OS Preference",
+      "mandatory": false,
+      "choices": [
+        "Windows",
+        "Mac",
+        "Linux"
+      ],
+      "referenceTable": ""
+    },
+    {
+      "name": "urgency",
+      "type": "choice",
+      "label": "Urgency",
+      "mandatory": true,
+      "choices": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "referenceTable": ""
+    }
+  ],
+  "approvals": [
+    "manager"
+  ],
+  "approvalGroups": [],
+  "approvalConditions": [],
+  "workflow": [
+    "submit",
+    "manager_approval",
+    "fulfillment",
+    "complete"
+  ],
+  "sla_minutes": 480,
+  "scripts": {
+    "businessRule": true,
+    "clientScript": true
+  },
+  "flowTrigger": {
+    "table": "sc_request",
+    "event": "insert",
+    "condition": "active=true"
+  }
+}
+[AUDIT] CREATE_CATALOG_ITEM_START: { name: 'Laptop Request' }
+[AUDIT] CATALOG_ITEM_CREATED: { sys_id: 'cat_mrzpr2sv0' }
+Creating variable set with 5 variables
+[AUDIT] VARIABLE_SET_CREATED: { sys_id: 'varset_j73y94ykn', count: 5 }
+Creating Flow Designer flow: Laptop Request
+[AUDIT] FLOW_CREATED: { sys_id: 'flow_fm5wzinja' }
+Creating approval rule for: Laptop Request
+[AUDIT] APPROVAL_RULE_CREATED: { sys_id: 'approval_4o8ev7w8s' }
+[AUDIT] BUSINESS_RULE_CREATED: { sys_id: 'br_8iak7goni' }
+[AUDIT] CLIENT_SCRIPT_CREATED: { sys_id: 'cs_gcqi1zflm' }
+Generating ATF test case for: Laptop Request
+[AUDIT] ATF_TEST_CASE_GENERATED: { sys_id: 'atf_1379yqkoz' }
+Executing ATF test case: atf_1379yqkoz
+[AUDIT] ATF_TEST_EXECUTED: { status: 'passed' }
+Generating update set for: Laptop Request
+[AUDIT] CREATE_CATALOG_ITEM_FAILED: { name: 'Laptop Request' }
+🧠 Using OpenRouter (meta-llama/llama-3.3-70b-instruct) for interpretation...
+📋 Using fallback rule-based interpreter
+AST generated: {
+  "type": "catalog_item",
+  "name": "Laptop Request",
+  "description": "create a laptop req",
+  "category": "Hardware",
+  "variables": [
+    {
+      "name": "model",
+      "type": "choice",
+      "label": "Laptop Model",
+      "mandatory": true,
+      "choices": [
+        "Dell",
+        "HP",
+        "Lenovo",
+        "MacBook"
+      ],
+      "referenceTable": ""
+    },
+    {
+      "name": "ram",
+      "type": "choice",
+      "label": "RAM Size",
+      "mandatory": true,
+      "choices": [
+        "8GB",
+        "16GB",
+        "32GB"
+      ],
+      "referenceTable": ""
+    },
+    {
+      "name": "justification",
+      "type": "multiline",
+      "label": "Business Justification",
+      "mandatory": true,
+      "choices": [],
+      "referenceTable": ""
+    },
+    {
+      "name": "os_preference",
+      "type": "choice",
+      "label": "OS Preference",
+      "mandatory": false,
+      "choices": [
+        "Windows",
+        "Mac",
+        "Linux"
+      ],
+      "referenceTable": ""
+    },
+    {
+      "name": "urgency",
+      "type": "choice",
+      "label": "Urgency",
+      "mandatory": true,
+      "choices": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "referenceTable": ""
+    }
+  ],
+  "approvals": [
+    "manager"
+  ],
+  "approvalGroups": [],
+  "approvalConditions": [],
+  "workflow": [
+    "submit",
+    "manager_approval",
+    "fulfillment",
+    "complete"
+  ],
+  "sla_minutes": 480,
+  "scripts": {
+    "businessRule": true,
+    "clientScript": true
+  },
+  "flowTrigger": {
+    "table": "sc_request",
+    "event": "insert",
+    "condition": "active=true"
+  }
+}
+[AUDIT] CREATE_CATALOG_ITEM_START: { name: 'Laptop Request' }
+[AUDIT] CATALOG_ITEM_CREATED: { sys_id: 'cat_wvu75wtws' }
+Creating variable set with 5 variables
+[AUDIT] VARIABLE_SET_CREATED: { sys_id: 'varset_lse50pfqq', count: 5 }
+Creating Flow Designer flow: Laptop Request
+[AUDIT] FLOW_CREATED: { sys_id: 'flow_n2c83kdfl' }
+Creating approval rule for: Laptop Request
+[AUDIT] APPROVAL_RULE_CREATED: { sys_id: 'approval_adpwdapr2' }
+[AUDIT] BUSINESS_RULE_CREATED: { sys_id: 'br_saongw8aq' }
+[AUDIT] CLIENT_SCRIPT_CREATED: { sys_id: 'cs_c25addazd' }
+Generating ATF test case for: Laptop Request
+[AUDIT] ATF_TEST_CASE_GENERATED: { sys_id: 'atf_3bkuwgczy' }
+Executing ATF test case: atf_3bkuwgczy
+[AUDIT] ATF_TEST_EXECUTED: { status: 'passed' }
+Generating update set for: Laptop Request
+[AUDIT] CREATE_CATALOG_ITEM_FAILED: { name: 'Laptop Request' }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/index.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/index.js`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/index.js`[39m
+🔧 Deployment Service Init:
+  Instance: https://dev277103.service-now.com
+  User: admin
+ServiceNow Config:
+  Instance: https://dev277103.service-now.com
+  User: admin
+✅ Default admin user seeded (password: admin123)
+🧠 Using in-memory data store
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
